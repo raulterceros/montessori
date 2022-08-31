@@ -6,18 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juguetes</title>
     <link rel="stylesheet" href="../CSS/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 </head>
 <body>
 
-    <nav id="menu">
-        <div class="menu_categorias">
-            <a href="../index.html">Home</a>
-            <a href="/paginas/juguetes.html">Juguetes</a>
-            <a href="/paginas/actividades.html">Actividades</a>
-            <a href="/paginas/agenda.html">Agenda</a>
-            <a href="/paginas/contacto.html">Contacto</a>
+    <nav class="navbar navbar-expand-lg bg-gradient bg-warning bg-opacity-100">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="juguetes.html">Juguetes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="actividades.html">Actividades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="agenda.html">Agenda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
     <header id="titular">
         <div class="header__titulo">
@@ -26,7 +45,7 @@
     </header>
 
 
-     <main id="seccionJuguetes">
+<!--      <main id="seccionJuguetes">
         <div class="grid-juguetes">
             <div class="juguetes-item"><img src="/assets/juguete1.jfif" alt=""></div>
             <div class="juguetes-item"><img src="/assets/juguete2.jfif" alt=""></div>
@@ -36,7 +55,66 @@
             <div class="juguetes-item"><img src="/assets/juguete6.jfif" alt=""></div>
 
         </div>
-     </main>
+     </main> -->
+
+
+     <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete1.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pesca</h5>
+            <p class="card-text">Juego de pesca para mejorar la motricidad. Edad recomendada: 1 a 5 años</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete2.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cubeta</h5>
+            <p class="card-text">Ideal para motricidad, reconocimiento de colores, formas y tamaños. Edad recomendada: 1 a 3 años.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete3.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Frutas</h5>
+            <p class="card-text">Aprende a identificar alimentos, colores y formas. Edad recomendada: 2 a 4 años</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete4.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Contador</h5>
+            <p class="card-text">Aprende los numeros, practica la motricidad fina. Edad recomendada: 4 a 6 años</p>
+          </div>
+        </div>           
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete5.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cubo Magico</h5>
+            <p class="card-text">Ejercita la motricidad fina, reconoce formas. Edad recomendada: 2 a 5 años</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="../assets/juguete6.jfif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rompecabezas</h5>
+            <p class="card-text">Ideal para conocer las formas y colores. Edad recomendada: 1 a 2 años</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
 
      <footer id="legales">
@@ -45,6 +123,8 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>

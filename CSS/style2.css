@@ -6,15 +6,7 @@
 }
 
 body {
-    background-color: beige;
-}
-
-#montessori-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px 80px auto 30px 20px;
-    height: 100vh;
-
+    background-color: #ffc107;
 }
 
 #titular {
@@ -131,4 +123,8 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+}
+
+.iconoSombra:hover {
+    box-shadow: 2px 2px 2px 2px black;
 }
